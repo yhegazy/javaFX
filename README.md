@@ -19,12 +19,16 @@ JavaFx - IntelliJ edition
   c) Right click on the newly added global library and click "Add to Module". Apply and OK
 4. Right click on the src directory to create a new module-info.java file
 5. Add the following to module-info.java in between the module's {}:
-  {
-    requires javafx.fxml;
-    requires javafx.controls;
 
-    opens sample;
-  }
-  
+<code>
+      
+    {
+      requires javafx.fxml;
+      requires javafx.controls;
+
+      opens sample;
+    }
+ 
+</code>
   Tada! It works! (On my machine at least).
   (curtesy of https://www.youtube.com/watch?v=qn2tbftFjno)
